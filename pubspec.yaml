@@ -1,7 +1,10 @@
 name: country_state_city_dropdown
 description: A Flutter package for country, state, and city dropdown selection.
 version: 0.0.1
-homepage:
+homepage: https://github.com/ir-khan/country_state_city_dropdown
+repository: https://github.com/ir-khan/country_state_city_dropdown
+issue_tracker: https://github.com/ir-khan/country_state_city_dropdown/issues
+license: MIT
 
 environment:
   sdk: ^3.7.2
