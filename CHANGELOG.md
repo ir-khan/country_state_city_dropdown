@@ -1,3 +1,11 @@
+## [0.1.1] - 2025-05-17
+
+### Added
+
+- `validator` parameter to `SearchableDropdown<T>` widget.
+  - Enables integration with `Form` widgets for validation.
+  - Accepts a `FormFieldValidator<String>` to validate selected or typed input.
+
 ## [0.1.0] - 2025-05-16
 
 ### Changed

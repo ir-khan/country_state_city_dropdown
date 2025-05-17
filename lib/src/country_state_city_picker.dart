@@ -46,6 +46,11 @@ class CountryStateCityPicker extends StatefulWidget {
   /// Icon shown at the end of the TextFormField.
   final Icon? suffixIcon;
 
+  /// Field-specific validators
+  final FormFieldValidator<String>? countryValidator;
+  final FormFieldValidator<String>? stateValidator;
+  final FormFieldValidator<String>? cityValidator;
+
   const CountryStateCityPicker({
     super.key,
     this.onCountryChanged,
@@ -62,6 +67,9 @@ class CountryStateCityPicker extends StatefulWidget {
     this.textStyle,
     this.listItemTextStyle,
     this.suffixIcon,
+    this.countryValidator,
+    this.stateValidator,
+    this.cityValidator,
   });
 
   @override
@@ -127,6 +135,7 @@ class _CountryStateCityPickerState extends State<CountryStateCityPicker> {
           listItemTextStyle: widget.listItemTextStyle,
           suffixIcon: widget.suffixIcon,
           emptyResultWidget: widget.emptyResultWidget,
+          validator: widget.countryValidator,
         ),
 
         // State dropdown
@@ -148,6 +157,7 @@ class _CountryStateCityPickerState extends State<CountryStateCityPicker> {
           listItemTextStyle: widget.listItemTextStyle,
           suffixIcon: widget.suffixIcon,
           emptyResultWidget: widget.emptyResultWidget,
+          validator: widget.stateValidator,
         ),
 
         // City dropdown
@@ -168,6 +178,7 @@ class _CountryStateCityPickerState extends State<CountryStateCityPicker> {
           listItemTextStyle: widget.listItemTextStyle,
           suffixIcon: widget.suffixIcon,
           emptyResultWidget: widget.emptyResultWidget,
+          validator: widget.cityValidator,
         ),
       ],
     );

@@ -72,6 +72,9 @@ class SearchableDropdown<T> extends StatefulWidget {
   /// Widget to show when no filtered results are found.
   final Widget? emptyResultWidget;
 
+  /// Optional validator for form validation.
+  final FormFieldValidator<String>? validator;
+
   /// Creates a searchable dropdown with customizable properties.
   const SearchableDropdown({
     super.key,
@@ -86,6 +89,7 @@ class SearchableDropdown<T> extends StatefulWidget {
     this.listItemTextStyle,
     this.suffixIcon,
     this.emptyResultWidget,
+    this.validator,
   });
 
   @override
@@ -251,6 +255,7 @@ class _SearchableDropdownState<T> extends State<SearchableDropdown<T>> {
         focusNode: _focusNode,
         enabled: widget.enabled,
         style: widget.textStyle,
+        validator: widget.validator,
         decoration: widget.decoration.copyWith(
           suffixIcon: widget.suffixIcon ?? const Icon(Icons.arrow_drop_down),
         ),
