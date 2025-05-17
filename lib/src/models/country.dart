@@ -11,8 +11,7 @@ class Country {
     return Country(
       id: json['id'],
       name: json['name'],
-      states:
-          (json['states'] as List).map((e) => StateModel.fromJson(e)).toList(),
+      states: (json['states'] as List).map((e) => StateModel.fromJson(e)).toList(),
     );
   }
 }

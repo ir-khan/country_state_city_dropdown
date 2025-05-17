@@ -1,6 +1,6 @@
 name: country_state_city_dropdown
-description: A Flutter package for country, state, and city dropdown selection.
-version: 0.0.1
+description: A customizable Flutter package for searchable, cascading Country, State, and City dropdowns using JSON data.
+version: 0.1.0
 homepage: https://github.com/ir-khan/country_state_city_dropdown
 repository: https://github.com/ir-khan/country_state_city_dropdown
 issue_tracker: https://github.com/ir-khan/country_state_city_dropdown/issues
@@ -13,7 +13,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dropdown_search: ^6.0.2
 
 dev_dependencies:
   flutter_test:

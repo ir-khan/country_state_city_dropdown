@@ -1,13 +1,15 @@
 # 🌍 Country State City Dropdown
 
-A Flutter package to provide cascading dropdowns for **Country**, **State**, and **City** selections using your own JSON data. This widget is theme-adaptive and works well with light and dark themes.
+A Flutter package that provides dynamic, cascading dropdowns for selecting **Country**, **State**, and **City** using local JSON data. Built with full customizability and search functionality.
 
 ## ✨ Features
 
-- 🌐 Country, State, City dropdowns
-- 🔄 Dynamic population based on selection
-- 🎨 Theme adaptive
-- 📦 Easily integratable in forms
+✅ Cascading dropdowns (Country → State → City)  
+✅ Built-in search with `OverlayEntry`  
+✅ No external dependencies  
+✅ Form-friendly and highly customizable  
+✅ Dark mode/theme support  
+✅ Easy integration
 
 ## 🚀 Getting Started
 
@@ -50,7 +52,7 @@ class MyApp extends StatelessWidget {
             onCountryChanged: (country) => print("Country: ${country.name}"),
             onStateChanged: (state) => print("State: ${state.name}"),
             onCityChanged: (city) => print("City: ${city.name}"),
-            spacing: 30,
+            spacing: 10,
           ),
         ),
       ),
@@ -67,8 +69,8 @@ Check the `/example` folder for a complete working demo.
 
 ## 📄 License
 
-MIT License
+This project is licensed under the MIT License.
 
 ---
 
-Made with ❤️ in Flutter
+Made with ❤️ by @ir-khan

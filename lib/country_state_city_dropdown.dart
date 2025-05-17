@@ -1,6 +1,6 @@
 library country_state_city_dropdown;
 
-export 'widgets/dropdown_widget.dart';
-export 'models/country.dart';
-export 'models/state_model.dart';
-export 'models/city.dart';
+export 'src/country_state_city_picker.dart';
+export 'src/models/country.dart';
+export 'src/models/state_model.dart';
+export 'src/models/city.dart';
